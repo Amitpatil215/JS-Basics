@@ -22,3 +22,17 @@ document.querySelector('button').addEventListener('click', (event) => {
     event.target.textContent = 'I was clicked'
 
 })
+
+//track input form
+
+// When we click outside it will print text cause 'change'
+// # for selecting by ID
+// .class_name for selcting by class
+// document.querySelector('#myform').addEventListener('change', (event) => {
+//     console.log(event.target.value);
+// })
+
+// printing as usertyping in form
+document.querySelector('#myform').addEventListener('input', (event) => {
+    console.log(event.target.value);
+})

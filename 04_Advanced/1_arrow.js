@@ -4,7 +4,7 @@
 
 const sayHello = (name) => "Hey there " + name
 
-console.log(sayHello("Amit"));
+//console.log(sayHello("Amit"));
 
 
 const todo = [{ title: 'Buy bread', isDone: true },
@@ -20,8 +20,18 @@ const thingsNotDone = todo.filter((eachTodo) =>
     eachTodo.isDone === false
 )
 
-console.log("Things Done");
-console.log(thingsDone);
+//console.log("Things Done");
+//console.log(thingsDone);
 
-console.log("Things Not Done");
-console.log(thingsNotDone.forEach(function(each,index){console.log(each['title']);}));
+//console.log("Things Not Done");
+//console.log(thingsNotDone.forEach(function(each,index){console.log(each['title']);}));
+
+
+const cameras = {
+    price: 600,
+    weight: 2000,
+    // Never use arrow functions in methods and constructor
+    desc: function () {
+        return `This canon camera is of ${this.price}`
+    }
+}
